@@ -16,8 +16,6 @@ Para ter acesso a nossa API, basta realizar um cadastro no Cake e entrar em cont
 
 Abaixo seguem dois exemplos utilizando o método GET e POST, para buscar informações e criar registros
 
-Exemplo <b>(cURL)</b> - https://curl.se/
-
 #### GET:
 
 ```sh
@@ -39,3 +37,4 @@ curl --location --request POST 'https://app.cakeerp.com/api/product' \
     "stock": 10.0
 }'
 ```
+Exemplo Utilizando: <b>(cURL)</b> - https://curl.se/
