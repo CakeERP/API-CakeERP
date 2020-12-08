@@ -12,9 +12,9 @@ Olá! Este projeto tem como objetivo principal, exemplificar o uso da API do Cak
 - https://app.cakeerp.com/api_docs/api.html
 
 ## ✔️ Introdução
-Para ter acesso a nossa API, basta realizar um cadastro no Cake e entrar em contato com o suporte técnico, solicitando o Token de acesso, que será usado para realizar a request em nosso servidor, simples assim!
+Para ter acesso a nossa API, basta realizar um cadastro no Cake e entrar em contato com o suporte técnico, solicitando o Token de acesso, que será usado para realizar a request em nosso servidor, simples assim! Este token deverá ser passado no cabeçalho da request com a chave <b>“X-cake-token”</b>. Todas as requests devem utilizar <b>content-type application/json</b>.
 
-Abaixo seguem dois exemplos utilizando o método GET e POST, para buscar informações e criar registros
+Abaixo seguem dois exemplos utilizando o método GET e POST, para buscar informações e criar registros.
 
 #### GET:
 
@@ -23,6 +23,8 @@ curl --location --request GET 'https://app.cakeerp.com/api/product/all' \
 --header 'x-cake-token: Token' \
 --header 'Content-Type: application/json'
 ```
+<img src="Docs/cake-exemplo-get.png">
+<p>
 
 #### POST:
 
@@ -37,4 +39,17 @@ curl --location --request POST 'https://app.cakeerp.com/api/product' \
     "stock": 10.0
 }'
 ```
-Exemplo Utilizando: <b>(cURL)</b> - https://curl.se/
+<img src="Docs/cake-exemplo-post.png">
+<p>
+
+Exemplos Utilizando:
+- <b>(cURL)</b> - https://curl.se/
+- <b>(Postman)</b> - https://www.postman.com/
+<p>
+
+## Erros de Retorno
+
+```
+    Acesso Negado: {‘status’:403, ‘message’:’Acesso Negado’}
+    Operações: {‘error’: ‘mensagem do erro’}
+```
