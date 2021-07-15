@@ -1,0 +1,322 @@
+{
+	"info": {
+		"_postman_id": "859626da-d857-4fd7-87e2-191e82283603",
+		"name": "CakeERP - API - SalesOrder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SalesOrder",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "Token",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://app.cakeerp.com/api/sales_order/all",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"sales_order",
+						"all"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalesOrder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "Token",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"order_number\": 1,\n    \"order_type\": 1,\n    \"delivery_time\": \"2021-07-31\",\n    \"date_order\": \"2021-07-14\",\n    \"date_sell\": \"2021-07-14\",\n    \"seller\": 20787,\n    \"customer\": 8632040,\n    \"validity\": 7,\n    \"canceled\": false,\n    \"inutilized\": false,\n    \"nfe\": false,\n    \"fiscal_operation\": 22372,\n    \"payment_form\": 56215,\n    \"total\": 150,\n    \"subtotal\": 0\n\n}"
+				},
+				"url": {
+					"raw": "https://app.cakeerp.com/api/sales_order",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"sales_order"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalesOrderItem",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "Token",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sales_order_id\": 5500966,\n    \"product_id\": 7463052,\n    \"item_number\": 1,\n    \"item_name\": \"API Cake\",\n    \"price_sell\": 100,\n    \"price_cost\": 50,\n    \"qtd\": 1,\n    \"canceled\": false\n}"
+				},
+				"url": {
+					"raw": "https://app.cakeerp.com/api/sales_order_item",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"sales_order_item"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalesOrderParcelGroup",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "Token",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://app.cakeerp.com/api/sales_order_parcel_group/all",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"sales_order_parcel_group",
+						"all"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalesOrderParcelGroup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "Token",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sales_order_id\": 5500966,\n    \"price\": 100,\n    \"payment_form\": 56215,\n    \"total_discount\": 0,\n    \"total_addition\": 0\n}"
+				},
+				"url": {
+					"raw": "https://app.cakeerp.com/api/sales_order_parcel_group",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"sales_order_parcel_group"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalesOrderParcel",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "Token",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://app.cakeerp.com/api/sales_order_parcel/all",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"sales_order_parcel",
+						"all"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalesOrderParcel",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "Token",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sales_order_id\": 5500966,\n    \"parcel\": 1,\n    \"expiration\": \"2021-07-31\",\n    \"price\": 100,\n    \"payment_form\": 56215,\n    \"sales_parcel_group\": 3275704\n}"
+				},
+				"url": {
+					"raw": "https://app.cakeerp.com/api/sales_order_parcel",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"sales_order_parcel"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
