@@ -1,10 +1,192 @@
 {
 	"info": {
-		"_postman_id": "859626da-d857-4fd7-87e2-191e82283603",
+		"_postman_id": "bbeb7ee9-1fa6-41b3-8de8-d3d71b5c3d7d",
 		"name": "CakeERP - API - SalesOrder",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
+		{
+			"name": "Customer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "Token",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://app.cakeerp.com/api/customer/all",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"customer",
+						"all"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "Token",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://app.cakeerp.com/api/customer/",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"customer",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seller",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "Token",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://app.cakeerp.com/api/seller/all",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"seller",
+						"all"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalesOrderShippingAddress",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "Token",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://app.cakeerp.com/api/sales_orders_shipping_address/",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"sales_orders_shipping_address",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
 		{
 			"name": "SalesOrder",
 			"protocolProfileBehavior": {
@@ -70,7 +252,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"order_number\": 1,\n    \"order_type\": 1,\n    \"delivery_time\": \"2021-07-31\",\n    \"date_order\": \"2021-07-14\",\n    \"date_sell\": \"2021-07-14\",\n    \"seller\": 20787,\n    \"customer\": 8632040,\n    \"validity\": 7,\n    \"canceled\": false,\n    \"inutilized\": false,\n    \"nfe\": false,\n    \"fiscal_operation\": 22372,\n    \"payment_form\": 56215,\n    \"total\": 150,\n    \"subtotal\": 0\n\n}"
+					"raw": "{\n    \"order_type\": 1,\n    \"delivery_time\": \"2021-07-31\",\n    \"date_order\": \"2021-07-14\",\n    \"date_sell\": \"2021-07-14\",\n    \"seller\": 11327,\n    \"customer\": 9248477,\n    \"validity\": 7,\n    \"canceled\": false,\n    \"inutilized\": false,\n    \"nfe\": false,\n    \"fiscal_operation\": 16147,\n    \"total\": 180.00,\n    \"subtotal\": 180.00\n\n}"
 				},
 				"url": {
 					"raw": "https://app.cakeerp.com/api/sales_order",
@@ -306,6 +488,186 @@
 					"path": [
 						"api",
 						"sales_order_parcel"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Intermediary",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "Token",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://app.cakeerp.com/api/intermediary/all",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"intermediary",
+						"all"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Intermediary",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "Token",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fiscal_operations_intermediary_id\": 3,\n    \"name\": \"Antonella e Yago Alimentos ME\",\n    \"code\": \"AYAM\",\n    \"active\": true,\n    \"doc_cnpj\": \"06684433000190\"\n}\n"
+				},
+				"url": {
+					"raw": "https://app.cakeerp.com/api/intermediary",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"intermediary"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalesOrderintermediary",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "Token",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://app.cakeerp.com/api/sales_orders_intermediary/all",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"sales_orders_intermediary",
+						"all"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalesOrderintermediary",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "Token",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sales_orders_id\": 5500966,\n    \"fiscal_operations_intermediary_id\": 3,\n    \"ind_intermed\": true,\n    \"inf_intermed\": \"Sabrina e Stefany Assessoria Jurídica Ltda\",\n    \"doc_cnpj\": 39572781000124\n}"
+				},
+				"url": {
+					"raw": "https://app.cakeerp.com/api/sales_orders_intermediary",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"sales_orders_intermediary"
 					],
 					"query": [
 						{
