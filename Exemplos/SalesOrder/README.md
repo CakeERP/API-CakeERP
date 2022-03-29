@@ -1,6 +1,6 @@
 # SalesOrder
 
-**POST**: SalesOrderintermediary
+**POST**: SalesOrderintermediary | **URL**: /api/sales_orders_intermediary
 <table>
    <thead>
       <tr>
