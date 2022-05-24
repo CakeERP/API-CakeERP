@@ -1,7 +1,7 @@
 # PurchaseOrder [Ordens de Compra]
 
 <details>
-  <summary>Lista de Serviços</summary>
+  <summary>Lista de Serviços Relacionados</summary>
   <ol>
     <li>
         <a href="#">Orderm de Compra</a>
