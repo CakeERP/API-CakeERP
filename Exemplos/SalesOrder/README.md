@@ -4,17 +4,12 @@
   <summary>Lista de Serviços Relacionados</summary>
   <ol>
     <li>
-        <a href="#">Serviços Dependentes</a>
+        <a href="#">Pedidos</a>
       <ul>
-        <li>GET - Clientes</li>
+         <li>GET - Clientes</li>
         <li>POST - Clientes</li>
         <li>GET - Vendedores</li>
         <li>POST - Vendedores</li>
-      </ul>
-    </li>
-    <li>
-        <a href="#">Pedidos</a>
-      <ul>
         <li>GET - Pedidos</li>
         <li>POST - Pedidos</li>
       </ul>
