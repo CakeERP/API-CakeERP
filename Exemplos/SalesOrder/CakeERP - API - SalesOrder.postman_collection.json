@@ -1,117 +1,11 @@
 {
 	"info": {
-		"_postman_id": "12135328-56a2-4d25-a6ce-39442329b6e4",
-		"name": "CakeERP - API - Product",
+		"name": "CakeERP - API - SalesOrder",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "GridFeature",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "Token",
-						"type": "text"
-					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "https://app.cakeerp.com/api/grid_feature/all",
-					"protocol": "https",
-					"host": [
-						"app",
-						"cakeerp",
-						"com"
-					],
-					"path": [
-						"api",
-						"grid_feature",
-						"all"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GridFeature - Cor",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "Token",
-						"type": "text"
-					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"name\": \"Cor\"\n}"
-				},
-				"url": {
-					"raw": "https://app.cakeerp.com/api/grid_feature",
-					"protocol": "https",
-					"host": [
-						"app",
-						"cakeerp",
-						"com"
-					],
-					"path": [
-						"api",
-						"grid_feature"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GridFeature - Tipo",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "Token",
-						"type": "text"
-					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"name\": \"Tipo\"\n}"
-				},
-				"url": {
-					"raw": "https://app.cakeerp.com/api/grid_feature",
-					"protocol": "https",
-					"host": [
-						"app",
-						"cakeerp",
-						"com"
-					],
-					"path": [
-						"api",
-						"grid_feature"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Grid",
+			"name": "Customer",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -120,7 +14,7 @@
 				"header": [
 					{
 						"key": "X-cake-token",
-						"value": "Token",
+						"value": "{{token}}",
 						"type": "text"
 					},
 					{
@@ -134,7 +28,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "https://app.cakeerp.com/api/grid/all",
+					"raw": "{{url_api}}/customer/all",
 					"protocol": "https",
 					"host": [
 						"app",
@@ -143,21 +37,28 @@
 					],
 					"path": [
 						"api",
-						"grid",
+						"customer",
 						"all"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Grid",
+			"name": "Customer",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "X-cake-token",
-						"value": "Token",
+						"value": "{{token}}",
 						"type": "text"
 					},
 					{
@@ -168,10 +69,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"GridTeste\",\n    \"line_feature\": 4269,\n    \"column_feature\": 4270,\n    \"line_feature_value\": \"Cor\",\n    \"column_feature_value\": \"Tipo\"\n}"
+					"raw": ""
 				},
 				"url": {
-					"raw": "https://app.cakeerp.com/api/grid",
+					"raw": "{{url_api}}/customer/",
 					"protocol": "https",
 					"host": [
 						"app",
@@ -180,14 +81,22 @@
 					],
 					"path": [
 						"api",
-						"grid"
+						"customer",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Product",
+			"name": "Seller",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -196,7 +105,7 @@
 				"header": [
 					{
 						"key": "X-cake-token",
-						"value": "Token",
+						"value": "{{token}}",
 						"type": "text"
 					},
 					{
@@ -207,10 +116,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"use_grid\": true\n}"
+					"raw": ""
 				},
 				"url": {
-					"raw": "https://app.cakeerp.com/api/product/all",
+					"raw": "{{url_api}}/seller/all",
 					"protocol": "https",
 					"host": [
 						"app",
@@ -219,195 +128,7 @@
 					],
 					"path": [
 						"api",
-						"product",
-						"all"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "7463052",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Product",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "Token",
-						"type": "text"
-					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"name\": \"API Cake\",\n    \"code\": \"CAKE-01\",\n    \"price_sell\": 95.99,\n    \"stock\": 10.0,\n    \"grid\": 391373,\n    \"category\": 533422,\n    \"active\": true\n}"
-				},
-				"url": {
-					"raw": "https://app.cakeerp.com/api/product",
-					"protocol": "https",
-					"host": [
-						"app",
-						"cakeerp",
-						"com"
-					],
-					"path": [
-						"api",
-						"product"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GridDetail",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "Token",
-						"type": "text"
-					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "https://app.cakeerp.com/api/grid_detail/all",
-					"protocol": "https",
-					"host": [
-						"app",
-						"cakeerp",
-						"com"
-					],
-					"path": [
-						"api",
-						"grid_detail",
-						"all"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GridDetail - Azul",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "Token",
-						"type": "text"
-					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"name\": \"Azul\",\n    \"grid\": 391373,\n    \"feature\": 4269,\n    \"value\": \"Azul\"\n}"
-				},
-				"url": {
-					"raw": "https://app.cakeerp.com/api/grid_detail",
-					"protocol": "https",
-					"host": [
-						"app",
-						"cakeerp",
-						"com"
-					],
-					"path": [
-						"api",
-						"grid_detail"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GridDetail - X",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "Token",
-						"type": "text"
-					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"name\": \"X\",\n    \"grid\": 391373,\n    \"feature\": 4270,\n    \"value\": \"X\"\n}"
-				},
-				"url": {
-					"raw": "https://app.cakeerp.com/api/grid_detail",
-					"protocol": "https",
-					"host": [
-						"app",
-						"cakeerp",
-						"com"
-					],
-					"path": [
-						"api",
-						"grid_detail"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "ProductGrid",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "Token",
-						"type": "text"
-					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "https://app.cakeerp.com/api/product_grid/all",
-					"protocol": "https",
-					"host": [
-						"app",
-						"cakeerp",
-						"com"
-					],
-					"path": [
-						"api",
-						"product_grid",
+						"seller",
 						"all"
 					],
 					"query": [
@@ -422,13 +143,13 @@
 			"response": []
 		},
 		{
-			"name": "ProductGrid",
+			"name": "SalesOrderShippingAddress",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "X-cake-token",
-						"value": "Token",
+						"value": "{{token}}",
 						"type": "text"
 					},
 					{
@@ -439,10 +160,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"API Cake - Azul - X\",\n    \"reference_product\": 7463163,\n    \"grid\": 391373,\n    \"line_feature\": 9135832,\n    \"column_feature\": 9135835,\n    \"stock\": 10,\n    \"active\": true,\n    \"sku\": \"CAKE-01.AZU.X\",\n    \"price_sell\": 199,\n    \"price_cost\": 150,\n    \"grid_model\": null,\n    \"line_feature_symbol\": \"Azu\",\n    \"column_feature_symbol\": \"X\",\n    \"line_feature_value\": \"Azul\",\n    \"column_feature_value\": \"X\"\n}"
+					"raw": ""
 				},
 				"url": {
-					"raw": "https://app.cakeerp.com/api/product_grid",
+					"raw": "{{url_api}}/sales_orders_shipping_address/",
 					"protocol": "https",
 					"host": [
 						"app",
@@ -451,56 +172,31 @@
 					],
 					"path": [
 						"api",
-						"product_grid"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "ProductCategory",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "Token",
-						"type": "text"
-					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"name\": \"Categoria API\",\n    \"symbol\": \"API\"\n}"
-				},
-				"url": {
-					"raw": "https://app.cakeerp.com/api/product_category",
-					"protocol": "https",
-					"host": [
-						"app",
-						"cakeerp",
-						"com"
+						"sales_orders_shipping_address",
+						""
 					],
-					"path": [
-						"api",
-						"product_category"
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "ProductCategory",
+			"name": "SalesOrder",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [
 					{
 						"key": "X-cake-token",
-						"value": "Token",
+						"value": "{{token}}",
 						"type": "text"
 					},
 					{
@@ -509,8 +205,12 @@
 						"type": "text"
 					}
 				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
-					"raw": "https://app.cakeerp.com/api/product_category/all",
+					"raw": "{{url_api}}/sales_order/all",
 					"protocol": "https",
 					"host": [
 						"app",
@@ -519,7 +219,7 @@
 					],
 					"path": [
 						"api",
-						"product_category",
+						"sales_order",
 						"all"
 					],
 					"query": [
@@ -534,13 +234,13 @@
 			"response": []
 		},
 		{
-			"name": "ProductTree",
+			"name": "SalesOrder",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [
 					{
 						"key": "X-cake-token",
-						"value": "Token",
+						"value": "{{token}}",
 						"type": "text"
 					},
 					{
@@ -549,8 +249,12 @@
 						"type": "text"
 					}
 				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"order_type\": 1,\n    \"delivery_time\": \"2021-07-31\",\n    \"date_order\": \"2021-07-14\",\n    \"date_sell\": \"2021-07-14\",\n    \"seller\": 11327,\n    \"customer\": 9248477,\n    \"validity\": 7,\n    \"canceled\": false,\n    \"inutilized\": false,\n    \"nfe\": false,\n    \"fiscal_operation\": 16147,\n    \"total\": 180.00,\n    \"subtotal\": 180.00\n\n}"
+				},
 				"url": {
-					"raw": "https://app.cakeerp.com/api/product_tree/all",
+					"raw": "{{url_api}}/sales_order",
 					"protocol": "https",
 					"host": [
 						"app",
@@ -559,19 +263,451 @@
 					],
 					"path": [
 						"api",
-						"product_tree",
-						"all"
+						"sales_order"
 					],
 					"query": [
 						{
 							"key": "id",
-							"value": "7463021",
+							"value": "",
 							"disabled": true
 						}
 					]
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "SalesOrderItem",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sales_order_id\": 5500966,\n    \"product_id\": 7463052,\n    \"item_number\": 1,\n    \"item_name\": \"API Cake\",\n    \"price_sell\": 100,\n    \"price_cost\": 50,\n    \"qtd\": 1,\n    \"canceled\": false\n}"
+				},
+				"url": {
+					"raw": "{{url_api}}/sales_order_item",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"sales_order_item"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalesOrderParcelGroup",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url_api}}/sales_order_parcel_group/all",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"sales_order_parcel_group",
+						"all"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalesOrderParcelGroup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sales_order_id\": 5500966,\n    \"price\": 100,\n    \"payment_form\": 56215,\n    \"total_discount\": 0,\n    \"total_addition\": 0\n}"
+				},
+				"url": {
+					"raw": "{{url_api}}/sales_order_parcel_group",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"sales_order_parcel_group"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalesOrderParcel",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url_api}}/sales_order_parcel/all",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"sales_order_parcel",
+						"all"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalesOrderParcel",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sales_order_id\": 5500966,\n    \"parcel\": 1,\n    \"expiration\": \"2021-07-31\",\n    \"price\": 100,\n    \"payment_form\": 56215,\n    \"sales_parcel_group\": 3275704\n}"
+				},
+				"url": {
+					"raw": "{{url_api}}/sales_order_parcel",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"sales_order_parcel"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Intermediary",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url_api}}/intermediary/all",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"intermediary",
+						"all"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Intermediary",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fiscal_operations_intermediary_id\": 3,\n    \"name\": \"Antonella e Yago Alimentos ME\",\n    \"code\": \"AYAM\",\n    \"active\": true,\n    \"doc_cnpj\": \"06684433000190\"\n}\n"
+				},
+				"url": {
+					"raw": "{{url_api}}/intermediary",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"intermediary"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalesOrderintermediary",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url_api}}/sales_orders_intermediary/all",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"sales_orders_intermediary",
+						"all"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalesOrderintermediary",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sales_orders_id\": 5500966,\n    \"fiscal_operations_intermediary_id\": 3,\n    \"ind_intermed\": true,\n    \"inf_intermed\": \"Sabrina e Stefany Assessoria Jurídica Ltda\",\n    \"doc_cnpj\": 39572781000124\n}"
+				},
+				"url": {
+					"raw": "{{url_api}}/sales_orders_intermediary",
+					"protocol": "https",
+					"host": [
+						"app",
+						"cakeerp",
+						"com"
+					],
+					"path": [
+						"api",
+						"sales_orders_intermediary"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "TOKEN"
+		},
+		{
+			"key": "url_api",
+			"value": "https://app.cakeerp.com/api"
 		}
 	]
 }

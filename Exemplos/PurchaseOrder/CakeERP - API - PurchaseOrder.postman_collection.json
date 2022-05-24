@@ -1,0 +1,914 @@
+{
+	"info": {
+		"name": "CakeERP - API - PurchaseOrder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Orderm de Compra",
+			"item": [
+				{
+					"name": "Fornecedores",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_api}}/supplier/all",
+							"protocol": "https",
+							"host": [
+								"app",
+								"cakeerp",
+								"com"
+							],
+							"path": [
+								"api",
+								"supplier",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Formas de Pagamento",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_api}}/payment_form/all",
+							"protocol": "https",
+							"host": [
+								"app",
+								"cakeerp",
+								"com"
+							],
+							"path": [
+								"api",
+								"payment_form",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Operações Fiscais",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_api}}/fiscal_operation/all",
+							"protocol": "https",
+							"host": [
+								"app",
+								"cakeerp",
+								"com"
+							],
+							"path": [
+								"api",
+								"fiscal_operation",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transportadoras",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_api}}/transporter/all",
+							"protocol": "https",
+							"host": [
+								"app",
+								"cakeerp",
+								"com"
+							],
+							"path": [
+								"api",
+								"transporter",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ordens de Compra",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"supplier\": 101380,\n    \"date_order\": \"2022-05-25\",\n    \"discount_amount\": 0.0,\n    \"total\": 226.32,\n    \"payment_form\": 49679,\n    \"qtd_parcels\": 2,\n    \"obs\": \"Orderm de Compra\",\n    \"tip_status\": 2,\n    \"fiscal_operation\": 16147,\n    \"nf\": null,\n    \"serie\": null,\n    \"date_emis_nf\": null,\n    \"shipping_transporter\": 11782,\n    \"shipping_value\": 0.0,\n    \"icms_st\": 0.0,\n    \"pis\": 0.0,\n    \"cofins\": 0.0,\n    \"addition_amount\": 0.0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_api}}/purchase_order",
+							"protocol": "https",
+							"host": [
+								"app",
+								"cakeerp",
+								"com"
+							],
+							"path": [
+								"api",
+								"purchase_order"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Itens da Ordem de Compra",
+			"item": [
+				{
+					"name": "Ordens de Compra",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_api}}/purchase_order?id={{purchase_order_id}}",
+							"protocol": "https",
+							"host": [
+								"app",
+								"cakeerp",
+								"com"
+							],
+							"path": [
+								"api",
+								"purchase_order"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{{purchase_order_id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Produtos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_api}}/product/all",
+							"protocol": "https",
+							"host": [
+								"app",
+								"cakeerp",
+								"com"
+							],
+							"path": [
+								"api",
+								"product",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tipos de Item",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_api}}/item_type/all",
+							"protocol": "https",
+							"host": [
+								"app",
+								"cakeerp",
+								"com"
+							],
+							"path": [
+								"api",
+								"item_type",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Itens da Ordem de Compra",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"purchase_order_id\": 47175,\n    \"product_id\": 7251077,\n    \"grid\": null,\n    \"line_feature\": null,\n    \"column_feature\": null,\n    \"service_id\": null,\n    \"item_type\": \"product\",\n    \"item_name\": \"Produto API Cake\",\n    \"qtd\": 1,\n    \"qtd_served\": 0,\n    \"unit_price\": 226.32,\n    \"ncm\": null,\n    \"cst\": null,\n    \"price_served\": 226.32\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_api}}/purchase_order_item",
+							"protocol": "https",
+							"host": [
+								"app",
+								"cakeerp",
+								"com"
+							],
+							"path": [
+								"api",
+								"purchase_order_item"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Parcelas da Ordem de Compra",
+			"item": [
+				{
+					"name": "Ordens de Compra",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_api}}/purchase_order?id={{purchase_order_id}}",
+							"protocol": "https",
+							"host": [
+								"app",
+								"cakeerp",
+								"com"
+							],
+							"path": [
+								"api",
+								"purchase_order"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{{purchase_order_id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Parcelas da Ordem de Compra",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"purchase_order_id\": 47175,\n    \"parcela\": 1,\n    \"vencimento\": \"2022-05-31\",\n    \"value\": 226.32\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_api}}/purchase_order_parcel",
+							"protocol": "https",
+							"host": [
+								"app",
+								"cakeerp",
+								"com"
+							],
+							"path": [
+								"api",
+								"purchase_order_parcel"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tributações dos itens da ordem de compra",
+			"item": [
+				{
+					"name": "Ordens de Compra",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_api}}/purchase_order?id={{purchase_order_id}}",
+							"protocol": "https",
+							"host": [
+								"app",
+								"cakeerp",
+								"com"
+							],
+							"path": [
+								"api",
+								"purchase_order"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{{purchase_order_id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CFOP",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_api}}/cfop/all",
+							"protocol": "https",
+							"host": [
+								"app",
+								"cakeerp",
+								"com"
+							],
+							"path": [
+								"api",
+								"cfop",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Base ICMS",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_api}}/base_icms/all",
+							"protocol": "https",
+							"host": [
+								"app",
+								"cakeerp",
+								"com"
+							],
+							"path": [
+								"api",
+								"base_icms",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tributações dos itens da ordem de compra",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"purchase_order_id\": 47175,\n    \"purchase_order_item_id\": 180257,\n    \"cfop\": 4,\n    \"cst\": 10,\n    \"icms_rate\": 12,\n    \"icms_totalizer\": null,\n    \"icms_basis\": 0.0,\n    \"icms_amount\": 0.0,\n    \"icms_discount\": null,\n    \"icms_addition\": null,\n    \"icms_canceled\": null,\n    \"icms_st\": 5.69,\n    \"icms_not_incident\": null,\n    \"icms_free\": null,\n    \"issqn_rate\": null,\n    \"issqn_totalizer\": null,\n    \"issqn_basis\": null,\n    \"issqn_amount\": null,\n    \"issqn_discount\": null,\n    \"issqn_addition\": null,\n    \"issqn_canceled\": null,\n    \"issqn_st\": null,\n    \"issqn_not_incident\": null,\n    \"issqn_free\": null,\n    \"ipi_rate\": 0.0,\n    \"ipi_amount\": 0.0,\n    \"other_taxes\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_api}}/purchase_order_item_tax",
+							"protocol": "https",
+							"host": [
+								"app",
+								"cakeerp",
+								"com"
+							],
+							"path": [
+								"api",
+								"purchase_order_item_tax"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Recebimento Ordem de Compra",
+			"item": [
+				{
+					"name": "Ordens de Compra",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_api}}/purchase_order?id={{purchase_order_id}}",
+							"protocol": "https",
+							"host": [
+								"app",
+								"cakeerp",
+								"com"
+							],
+							"path": [
+								"api",
+								"purchase_order"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{{purchase_order_id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pedidos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_api}}/sales_order/all",
+							"protocol": "https",
+							"host": [
+								"app",
+								"cakeerp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sales_order",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recebimento Ordem de Compra",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"purchase_order_id\": 47175,\n    \"nf\": 30848,\n    \"serie\": 2,\n    \"nfe_key\": \"35180160755519000101550010000308471002151008\",\n    \"date_emis_nf\": \"2022-05-25\",\n    \"product_id\": null,\n    \"qtd\": 1,\n    \"qtd_served\": 1,\n    \"date_receive\": \"2022-05-25\",\n    \"price_served\": 226.32,\n    \"price_cost\": 226.32,\n    \"supplier\": 101380,\n    \"reversed\": 0,\n    \"obs\": \"Orderm de Compra\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_api}}/purchase_order_receives",
+							"protocol": "https",
+							"host": [
+								"app",
+								"cakeerp",
+								"com"
+							],
+							"path": [
+								"api",
+								"purchase_order_receives"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ordens de Compra",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 47177,\n    \"tip_status\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_api}}/purchase_order",
+							"protocol": "https",
+							"host": [
+								"app",
+								"cakeerp",
+								"com"
+							],
+							"path": [
+								"api",
+								"purchase_order"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "TOKEN"
+		},
+		{
+			"key": "url_api",
+			"value": "https://app.cakeerp.com/api"
+		}
+	]
+}
