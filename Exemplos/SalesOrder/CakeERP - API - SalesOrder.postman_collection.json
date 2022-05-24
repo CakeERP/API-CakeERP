@@ -5,7 +5,7 @@
 	},
 	"item": [
 		{
-			"name": "Customer",
+			"name": "Clientes",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -29,14 +29,10 @@
 				},
 				"url": {
 					"raw": "{{url_api}}/customer/all",
-					"protocol": "https",
 					"host": [
-						"app",
-						"cakeerp",
-						"com"
+						"{{url_api}}"
 					],
 					"path": [
-						"api",
 						"customer",
 						"all"
 					],
@@ -52,7 +48,7 @@
 			"response": []
 		},
 		{
-			"name": "Customer",
+			"name": "Clientes",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -73,14 +69,10 @@
 				},
 				"url": {
 					"raw": "{{url_api}}/customer/",
-					"protocol": "https",
 					"host": [
-						"app",
-						"cakeerp",
-						"com"
+						"{{url_api}}"
 					],
 					"path": [
-						"api",
 						"customer",
 						""
 					],
@@ -96,7 +88,7 @@
 			"response": []
 		},
 		{
-			"name": "Seller",
+			"name": "Vendedores",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -120,14 +112,10 @@
 				},
 				"url": {
 					"raw": "{{url_api}}/seller/all",
-					"protocol": "https",
 					"host": [
-						"app",
-						"cakeerp",
-						"com"
+						"{{url_api}}"
 					],
 					"path": [
-						"api",
 						"seller",
 						"all"
 					],
@@ -143,7 +131,7 @@
 			"response": []
 		},
 		{
-			"name": "SalesOrderShippingAddress",
+			"name": "Endereço de Entrega do Pedido",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -164,14 +152,10 @@
 				},
 				"url": {
 					"raw": "{{url_api}}/sales_orders_shipping_address/",
-					"protocol": "https",
 					"host": [
-						"app",
-						"cakeerp",
-						"com"
+						"{{url_api}}"
 					],
 					"path": [
-						"api",
 						"sales_orders_shipping_address",
 						""
 					],
@@ -187,7 +171,7 @@
 			"response": []
 		},
 		{
-			"name": "SalesOrder",
+			"name": "Pedidos",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -211,14 +195,10 @@
 				},
 				"url": {
 					"raw": "{{url_api}}/sales_order/all",
-					"protocol": "https",
 					"host": [
-						"app",
-						"cakeerp",
-						"com"
+						"{{url_api}}"
 					],
 					"path": [
-						"api",
 						"sales_order",
 						"all"
 					],
@@ -234,7 +214,7 @@
 			"response": []
 		},
 		{
-			"name": "SalesOrder",
+			"name": "Pedidos",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -255,14 +235,10 @@
 				},
 				"url": {
 					"raw": "{{url_api}}/sales_order",
-					"protocol": "https",
 					"host": [
-						"app",
-						"cakeerp",
-						"com"
+						"{{url_api}}"
 					],
 					"path": [
-						"api",
 						"sales_order"
 					],
 					"query": [
@@ -277,7 +253,7 @@
 			"response": []
 		},
 		{
-			"name": "SalesOrderItem",
+			"name": "Itens do Pedidos",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -298,14 +274,10 @@
 				},
 				"url": {
 					"raw": "{{url_api}}/sales_order_item",
-					"protocol": "https",
 					"host": [
-						"app",
-						"cakeerp",
-						"com"
+						"{{url_api}}"
 					],
 					"path": [
-						"api",
 						"sales_order_item"
 					],
 					"query": [
@@ -320,7 +292,7 @@
 			"response": []
 		},
 		{
-			"name": "SalesOrderParcelGroup",
+			"name": "Grupo de Parcelas do Pedido",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -344,14 +316,10 @@
 				},
 				"url": {
 					"raw": "{{url_api}}/sales_order_parcel_group/all",
-					"protocol": "https",
 					"host": [
-						"app",
-						"cakeerp",
-						"com"
+						"{{url_api}}"
 					],
 					"path": [
-						"api",
 						"sales_order_parcel_group",
 						"all"
 					],
@@ -367,7 +335,7 @@
 			"response": []
 		},
 		{
-			"name": "SalesOrderParcelGroup",
+			"name": "Grupo de Parcelas do Pedido",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -388,14 +356,10 @@
 				},
 				"url": {
 					"raw": "{{url_api}}/sales_order_parcel_group",
-					"protocol": "https",
 					"host": [
-						"app",
-						"cakeerp",
-						"com"
+						"{{url_api}}"
 					],
 					"path": [
-						"api",
 						"sales_order_parcel_group"
 					],
 					"query": [
@@ -410,7 +374,7 @@
 			"response": []
 		},
 		{
-			"name": "SalesOrderParcel",
+			"name": "Parcelas do Pedido",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -434,14 +398,10 @@
 				},
 				"url": {
 					"raw": "{{url_api}}/sales_order_parcel/all",
-					"protocol": "https",
 					"host": [
-						"app",
-						"cakeerp",
-						"com"
+						"{{url_api}}"
 					],
 					"path": [
-						"api",
 						"sales_order_parcel",
 						"all"
 					],
@@ -457,7 +417,7 @@
 			"response": []
 		},
 		{
-			"name": "SalesOrderParcel",
+			"name": "Parcelas do Pedido",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -478,14 +438,10 @@
 				},
 				"url": {
 					"raw": "{{url_api}}/sales_order_parcel",
-					"protocol": "https",
 					"host": [
-						"app",
-						"cakeerp",
-						"com"
+						"{{url_api}}"
 					],
 					"path": [
-						"api",
 						"sales_order_parcel"
 					],
 					"query": [
@@ -500,7 +456,7 @@
 			"response": []
 		},
 		{
-			"name": "Intermediary",
+			"name": "Intermediador",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -524,14 +480,10 @@
 				},
 				"url": {
 					"raw": "{{url_api}}/intermediary/all",
-					"protocol": "https",
 					"host": [
-						"app",
-						"cakeerp",
-						"com"
+						"{{url_api}}"
 					],
 					"path": [
-						"api",
 						"intermediary",
 						"all"
 					],
@@ -547,7 +499,7 @@
 			"response": []
 		},
 		{
-			"name": "Intermediary",
+			"name": "Intermediador",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -568,105 +520,11 @@
 				},
 				"url": {
 					"raw": "{{url_api}}/intermediary",
-					"protocol": "https",
 					"host": [
-						"app",
-						"cakeerp",
-						"com"
+						"{{url_api}}"
 					],
 					"path": [
-						"api",
 						"intermediary"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "SalesOrderintermediary",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "{{token}}",
-						"type": "text"
-					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "{{url_api}}/sales_orders_intermediary/all",
-					"protocol": "https",
-					"host": [
-						"app",
-						"cakeerp",
-						"com"
-					],
-					"path": [
-						"api",
-						"sales_orders_intermediary",
-						"all"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "SalesOrderintermediary",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "{{token}}",
-						"type": "text"
-					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"sales_orders_id\": 5500966,\n    \"fiscal_operations_intermediary_id\": 3,\n    \"ind_intermed\": true,\n    \"inf_intermed\": \"Sabrina e Stefany Assessoria Jurídica Ltda\",\n    \"doc_cnpj\": 39572781000124\n}"
-				},
-				"url": {
-					"raw": "{{url_api}}/sales_orders_intermediary",
-					"protocol": "https",
-					"host": [
-						"app",
-						"cakeerp",
-						"com"
-					],
-					"path": [
-						"api",
-						"sales_orders_intermediary"
 					],
 					"query": [
 						{
