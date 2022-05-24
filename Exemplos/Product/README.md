@@ -1,7 +1,7 @@
 # Product [Produto]
 
 <details>
-  <summary>Lista de Serviços</summary>
+  <summary>Lista de Serviços Relacionados</summary>
   <ol>
     <li>
         <a href="#">Produto</a>
