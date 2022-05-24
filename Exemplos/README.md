@@ -1,7 +1,5 @@
 # CakeERP API
 
-# PurchaseOrder [Ordens de Compra]
-
 <details>
   <summary>Lista de Serviços</summary>
   <ol>
