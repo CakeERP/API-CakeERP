@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Serviços Dependentes",
+			"name": "Pedidos",
 			"item": [
 				{
 					"name": "Clientes",
@@ -93,44 +93,9 @@
 				},
 				{
 					"name": "Vendedores",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"method": "GET",
-						"header": [
-							{
-								"key": "X-cake-token",
-								"value": "{{token}}",
-								"type": "text"
-							},
-							{
-								"key": "content-type",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "{{url_api}}/seller/all",
-							"host": [
-								"{{url_api}}"
-							],
-							"path": [
-								"seller",
-								"all"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "",
-									"disabled": true
-								}
-							]
-						}
+						"header": []
 					},
 					"response": []
 				},
@@ -172,12 +137,7 @@
 						}
 					},
 					"response": []
-				}
-			]
-		},
-		{
-			"name": "Pedidos",
-			"item": [
+				},
 				{
 					"name": "Pedidos",
 					"protocolProfileBehavior": {
