@@ -6,19 +6,19 @@
     <li>
         <a href="#">Pedido</a>
       <ul>
-        <li>GET - Customer</li>
-        <li>POST- Customer</li>
-        <li>GET - Seller</li>
-        <li>POST - SalesOrderShippingAddress</li>
-        <li>GET - SalesOrder</li>
-        <li>POST - SalesOrder</li>
-        <li>POST - SalesOrderItem</li>
-        <li>GET - SalesOrderParcelGroup</li>
-        <li>POST - SalesOrderParcelGroup</li>
-        <li>GET - SalesOrderParcel</li>
-        <li>POST - SalesOrderParcel</li>
-        <li>GET - Intermediary</li>
-        <li>POST - Intermediary</li>
+        <li>GET - Clientes</li>
+        <li>POST- Clientes</li>
+        <li>GET - Vendedores</li>
+        <li>POST - Endereço de Entrega do Pedido</li>
+        <li>GET - Pedidos</li>
+        <li>POST - Pedidos</li>
+        <li>POST - Itens do Pedidos</li>
+        <li>GET - Grupo de Parcelas do Pedido</li>
+        <li>POST - Grupo de Parcelas do Pedido</li>
+        <li>GET - Parcelas do Pedido</li>
+        <li>POST - Parcelas do Pedido</li>
+        <li>GET - Intermediador</li>
+        <li>POST - Intermediador</li>
       </ul>
     </li>
  </details>
