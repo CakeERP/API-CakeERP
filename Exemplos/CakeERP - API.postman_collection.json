@@ -1,0 +1,2489 @@
+{
+	"info": {
+		"name": "CakeERP - API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Administradoras de Cartão",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/card_brand/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"card_brand",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bancos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/bank/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"bank",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bancos Base",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/banks_base/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"banks_base",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bandeiras de cartão",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/base_card_brand/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"base_card_brand",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bairros",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/district/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"district",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Base ICMS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/base_icms/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"base_icms",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Base ICMSST",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/base_icmsst/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"base_icmsst",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categoria de Fluxo de Caixa",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/cashflow_category/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"cashflow_category",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categoria de Operação Fiscal",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/fiscal_operation_category/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"fiscal_operation_category",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categorias de Produtos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/product_category/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"product_category",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categorias de Serviços",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/service_category/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"service_category",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Centros de Custo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/cost_center/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"cost_center",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CEP",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/zip_code/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"zip_code",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CFOP",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/cfop/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"cfop",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cidades",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/city/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"city",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clientes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "4db7860aed15c11a59ef",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6543/api/customer/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6543",
+					"path": [
+						"api",
+						"customer",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Grupo de Clientes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/customer_groups/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"customer_groups",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cofins",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/tax_cofins/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"tax_cofins",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comissões",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/seller_commission/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"seller_commission",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Condições das formas de pagamento",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/payment_form_condition/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"payment_form_condition",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Contas DRE",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/dre_account/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"dre_account",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Contas Financeiro",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/financial_account/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"financial_account",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dados Empresa",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/company_data/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"company_data",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Devoluções",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/sales_return/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"sales_return",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Endereço de Entrega do Pedido",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/sales_orders_shipping_address/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"sales_orders_shipping_address",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Estados",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/state/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"state",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fluxo de Caixa",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/cashflow/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"cashflow",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Formas de Pagamento",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/payment_form/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"payment_form",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Formas de Pagamento / Adminsitradora de cartão",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/payment_form_card_brand/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"payment_form_card_brand",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fornecedores",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/supplier/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"supplier",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Grades",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/grid/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"grid",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Grades Características",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/grid_feature/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"grid_feature",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Grades Características Valor",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/grid_detail/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"grid_detail",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ICMS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/tax_icms/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"tax_icms",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Impressoras Fiscais",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/ecf_printer/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"ecf_printer",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Informações Nota Fiscal",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/tax_nfinfo/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"tax_nfinfo",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IPI",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/tax_ipi/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"tax_ipi",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Itens do Pedidos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/sales_order_item/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"sales_order_item",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Itens da Ordem de Compra",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/purchase_order_item/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"purchase_order_item",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Locais de Estoque",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/stock_locale/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"stock_locale",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Items do Local de Estoque",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/stock_locale_items/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"stock_locale_items",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Items de grade do Local de Estoque",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/stock_locale_items_grid/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"stock_locale_items_grid",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Marcas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/brand/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"brand",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modelos Fiscais",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/fiscal_models/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"fiscal_models",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movimentos do PDV",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/pdv_movements/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"pdv_movements",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NCM",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/ncm/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"ncm",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Operações Fiscais",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/fiscal_operation/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"fiscal_operation",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ordens de Compra",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/purchase_order/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"purchase_order",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Origens Tributação",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/tax_origin/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"tax_origin",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Grupo de Parcelas do Pedido",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/sales_order_parcel_group/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"sales_order_parcel_group",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Parcelas do Pedido",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/sales_order_parcel/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"sales_order_parcel",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Parcelas da Ordem de Compra",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/purchase_order_parcel/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"purchase_order_parcel",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pedidos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/sales_order/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"sales_order",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PIS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/tax_pis/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"tax_pis",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produtos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/product/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"product",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produtos Grade",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/product_grid/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"product_grid",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Propostas Comerciais",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/commercial_proposal/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"commercial_proposal",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recebimento Ordem de Compra",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/purchase_order_receives/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"purchase_order_receives",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Relacionamento de fluxo de caixa",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/cashflow_relationship/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"cashflow_relationship",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Serviços",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/service/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"service",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Situações ICMS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/icms_situation/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"icms_situation",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Situações IPI",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/ipi_situation/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"ipi_situation",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Situações PIS/COFINS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/pis_cofins_situation/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"pis_cofins_situation",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Taxas de cartão de crédito",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/payment_form_card_brand_tax/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"payment_form_card_brand_tax",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tipo de Ajuste de Estoque",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/adjustement_type/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"adjustement_type",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ajustes de Estoque",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/stock_adjustment/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"stock_adjustment",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tipos de Item",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/item_type/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"item_type",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tipo de Operação Fiscal",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/fiscal_operation_type/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"fiscal_operation_type",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tipos de Usuário",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/user_type/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"user_type",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transportadoras",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/transporter/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"transporter",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tributações",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/tax/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"tax",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tributações Estados",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/tax_state/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"tax_state",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tributações dos itens do pedido",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/sales_order_item_tax/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"sales_order_item_tax",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tributações dos itens da ordem de compra",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/purchase_order_item_tax/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"purchase_order_item_tax",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unidade de Medida",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/measure_unit/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"measure_unit",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Usuários",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/user/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"user",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vendedores",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/seller/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"seller",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Items Extras Pedido",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/sales_order_item_extra/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"sales_order_item_extra",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ficha de Produção",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/product_productions/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"product_productions",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Coleções",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/product_collection/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"product_collection",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Referência do Produto no Fornecedor",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/product_supplier_reference/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"product_supplier_reference",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Classificação dos Produtos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/product_tree/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"product_tree",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tags",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/tags/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"tags",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Relações das Tags",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url_api}}/tags_relation/all",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"tags_relation",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "TOKEN"
+		},
+		{
+			"key": "url_api",
+			"value": "https://app.cakeerp.com/api"
+		}
+	]
+}
