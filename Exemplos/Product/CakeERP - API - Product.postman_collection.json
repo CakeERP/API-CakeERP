@@ -5,7 +5,7 @@
 	},
 	"item": [
 		{
-			"name": "GridFeature",
+			"name": "Grades Características",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -34,7 +34,7 @@
 			"response": []
 		},
 		{
-			"name": "GridFeature - Cor",
+			"name": "Grades Características - Cor",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -66,7 +66,7 @@
 			"response": []
 		},
 		{
-			"name": "GridFeature - Tipo",
+			"name": "Grades Características - Tipo",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -98,7 +98,7 @@
 			"response": []
 		},
 		{
-			"name": "Grid",
+			"name": "Grades",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -134,7 +134,7 @@
 			"response": []
 		},
 		{
-			"name": "Grid",
+			"name": "Grades",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -166,7 +166,7 @@
 			"response": []
 		},
 		{
-			"name": "Product",
+			"name": "Produtos",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -209,7 +209,7 @@
 			"response": []
 		},
 		{
-			"name": "Product",
+			"name": "Produtos",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -248,7 +248,7 @@
 			"response": []
 		},
 		{
-			"name": "GridDetail",
+			"name": "Grades Características Valor",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -277,7 +277,7 @@
 			"response": []
 		},
 		{
-			"name": "GridDetail - Azul",
+			"name": "Grades Características Valor - Azul",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -297,7 +297,7 @@
 					"raw": "{\n    \"name\": \"Azul\",\n    \"grid\": 391373,\n    \"feature\": 4269,\n    \"value\": \"Azul\"\n}"
 				},
 				"url": {
-					"raw": "{{url_api}}/grid_detail",
+					"raw": "https://app.cakeerp.com/api/grid_detail",
 					"protocol": "https",
 					"host": [
 						"app",
@@ -313,7 +313,7 @@
 			"response": []
 		},
 		{
-			"name": "GridDetail - X",
+			"name": "Grades Características Valor - X",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -333,7 +333,7 @@
 					"raw": "{\n    \"name\": \"X\",\n    \"grid\": 391373,\n    \"feature\": 4270,\n    \"value\": \"X\"\n}"
 				},
 				"url": {
-					"raw": "{{url_api}}/grid_detail",
+					"raw": "https://app.cakeerp.com/api/grid_detail",
 					"protocol": "https",
 					"host": [
 						"app",
@@ -349,7 +349,7 @@
 			"response": []
 		},
 		{
-			"name": "ProductGrid",
+			"name": "Produtos Grade",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -365,7 +365,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{url_api}}/product_grid/all",
+					"raw": "https://app.cakeerp.com/api/product_grid/all",
 					"protocol": "https",
 					"host": [
 						"app",
@@ -389,7 +389,7 @@
 			"response": []
 		},
 		{
-			"name": "ProductGrid",
+			"name": "Produtos Grade",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -409,7 +409,7 @@
 					"raw": "{\n    \"name\": \"API Cake - Azul - X\",\n    \"reference_product\": 7463163,\n    \"grid\": 391373,\n    \"line_feature\": 9135832,\n    \"column_feature\": 9135835,\n    \"stock\": 10,\n    \"active\": true,\n    \"sku\": \"CAKE-01.AZU.X\",\n    \"price_sell\": 199,\n    \"price_cost\": 150,\n    \"grid_model\": null,\n    \"line_feature_symbol\": \"Azu\",\n    \"column_feature_symbol\": \"X\",\n    \"line_feature_value\": \"Azul\",\n    \"column_feature_value\": \"X\"\n}"
 				},
 				"url": {
-					"raw": "{{url_api}}/product_grid",
+					"raw": "https://app.cakeerp.com/api/product_grid",
 					"protocol": "https",
 					"host": [
 						"app",
@@ -425,7 +425,7 @@
 			"response": []
 		},
 		{
-			"name": "ProductCategory",
+			"name": "Categorias de Produtos",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -445,7 +445,7 @@
 					"raw": "{\n    \"name\": \"Categoria API\",\n    \"symbol\": \"API\"\n}"
 				},
 				"url": {
-					"raw": "{{url_api}}/product_category",
+					"raw": "https://app.cakeerp.com/api/product_category",
 					"protocol": "https",
 					"host": [
 						"app",
@@ -461,7 +461,7 @@
 			"response": []
 		},
 		{
-			"name": "ProductCategory",
+			"name": "Categorias de Produtos",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -477,7 +477,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{url_api}}/product_category/all",
+					"raw": "https://app.cakeerp.com/api/product_category/all",
 					"protocol": "https",
 					"host": [
 						"app",
@@ -501,7 +501,7 @@
 			"response": []
 		},
 		{
-			"name": "ProductTree",
+			"name": "Classificação dos Produtos",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -517,7 +517,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{url_api}}/product_tree/all",
+					"raw": "https://app.cakeerp.com/api/product_tree/all",
 					"protocol": "https",
 					"host": [
 						"app",
