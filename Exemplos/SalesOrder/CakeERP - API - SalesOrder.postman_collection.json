@@ -1,541 +1,692 @@
 {
 	"info": {
 		"name": "CakeERP - API - SalesOrder",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3375748"
 	},
 	"item": [
 		{
-			"name": "Clientes",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "{{token}}",
-						"type": "text"
+			"name": "Serviços Dependentes",
+			"item": [
+				{
+					"name": "Clientes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
 					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "{{url_api}}/customer/all",
-					"host": [
-						"{{url_api}}"
-					],
-					"path": [
-						"customer",
-						"all"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "",
-							"disabled": true
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url_api}}/customer/all",
+							"host": [
+								"{{url_api}}"
+							],
+							"path": [
+								"customer",
+								"all"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Clientes",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "{{token}}",
-						"type": "text"
 					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": ""
+					"response": []
 				},
-				"url": {
-					"raw": "{{url_api}}/customer/",
-					"host": [
-						"{{url_api}}"
-					],
-					"path": [
-						"customer",
-						""
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "",
-							"disabled": true
+				{
+					"name": "Clientes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url_api}}/customer/",
+							"host": [
+								"{{url_api}}"
+							],
+							"path": [
+								"customer",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Vendedores",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "{{token}}",
-						"type": "text"
 					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": ""
+					"response": []
 				},
-				"url": {
-					"raw": "{{url_api}}/seller/all",
-					"host": [
-						"{{url_api}}"
-					],
-					"path": [
-						"seller",
-						"all"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Endereço de Entrega do Pedido",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "{{token}}",
-						"type": "text"
+				{
+					"name": "Vendedores",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
 					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "{{url_api}}/sales_orders_shipping_address/",
-					"host": [
-						"{{url_api}}"
-					],
-					"path": [
-						"sales_orders_shipping_address",
-						""
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "",
-							"disabled": true
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url_api}}/seller/all",
+							"host": [
+								"{{url_api}}"
+							],
+							"path": [
+								"seller",
+								"all"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Pedidos",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "{{token}}",
-						"type": "text"
 					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": ""
+					"response": []
 				},
-				"url": {
-					"raw": "{{url_api}}/sales_order/all",
-					"host": [
-						"{{url_api}}"
-					],
-					"path": [
-						"sales_order",
-						"all"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "",
-							"disabled": true
+				{
+					"name": "Vendedores",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url_api}}/seller",
+							"host": [
+								"{{url_api}}"
+							],
+							"path": [
+								"seller"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
 						}
-					]
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
 			"name": "Pedidos",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "{{token}}",
-						"type": "text"
+			"item": [
+				{
+					"name": "Pedidos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
 					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"order_type\": 1,\n    \"delivery_time\": \"2021-07-31\",\n    \"date_order\": \"2021-07-14\",\n    \"date_sell\": \"2021-07-14\",\n    \"seller\": 11327,\n    \"customer\": 9248477,\n    \"validity\": 7,\n    \"canceled\": false,\n    \"inutilized\": false,\n    \"nfe\": false,\n    \"fiscal_operation\": 16147,\n    \"total\": 180.00,\n    \"subtotal\": 180.00\n\n}"
-				},
-				"url": {
-					"raw": "{{url_api}}/sales_order",
-					"host": [
-						"{{url_api}}"
-					],
-					"path": [
-						"sales_order"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "",
-							"disabled": true
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url_api}}/sales_order/all",
+							"host": [
+								"{{url_api}}"
+							],
+							"path": [
+								"sales_order",
+								"all"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
 						}
-					]
+					},
+					"response": []
+				},
+				{
+					"name": "Pedidos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"order_type\": 1,\n    \"delivery_time\": \"2021-07-31\",\n    \"date_order\": \"2021-07-14\",\n    \"date_sell\": \"2021-07-14\",\n    \"seller\": 11327,\n    \"customer\": 9248477,\n    \"validity\": 7,\n    \"canceled\": false,\n    \"inutilized\": false,\n    \"nfe\": false,\n    \"fiscal_operation\": 16147,\n    \"total\": 180.00,\n    \"subtotal\": 180.00\n\n}"
+						},
+						"url": {
+							"raw": "{{url_api}}/sales_order",
+							"host": [
+								"{{url_api}}"
+							],
+							"path": [
+								"sales_order"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
+		},
+		{
+			"name": "Parcelas do Pedido",
+			"item": [
+				{
+					"name": "Grupo de Parcelas do Pedido",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url_api}}/sales_order_parcel_group/all",
+							"host": [
+								"{{url_api}}"
+							],
+							"path": [
+								"sales_order_parcel_group",
+								"all"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Grupo de Parcelas do Pedido",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"sales_order_id\": 5500966,\n    \"price\": 100,\n    \"payment_form\": 56215,\n    \"total_discount\": 0,\n    \"total_addition\": 0\n}"
+						},
+						"url": {
+							"raw": "{{url_api}}/sales_order_parcel_group",
+							"host": [
+								"{{url_api}}"
+							],
+							"path": [
+								"sales_order_parcel_group"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Parcelas do Pedido",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url_api}}/sales_order_parcel/all",
+							"host": [
+								"{{url_api}}"
+							],
+							"path": [
+								"sales_order_parcel",
+								"all"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Parcelas do Pedido",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"sales_order_id\": 5500966,\n    \"parcel\": 1,\n    \"expiration\": \"2021-07-31\",\n    \"price\": 100,\n    \"payment_form\": 56215,\n    \"sales_parcel_group\": 3275704\n}"
+						},
+						"url": {
+							"raw": "{{url_api}}/sales_order_parcel",
+							"host": [
+								"{{url_api}}"
+							],
+							"path": [
+								"sales_order_parcel"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		},
 		{
 			"name": "Itens do Pedidos",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "{{token}}",
-						"type": "text"
+			"item": [
+				{
+					"name": "Itens do Pedidos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
 					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"sales_order_id\": 5500966,\n    \"product_id\": 7463052,\n    \"item_number\": 1,\n    \"item_name\": \"API Cake\",\n    \"price_sell\": 100,\n    \"price_cost\": 50,\n    \"qtd\": 1,\n    \"canceled\": false\n}"
-				},
-				"url": {
-					"raw": "{{url_api}}/sales_order_item",
-					"host": [
-						"{{url_api}}"
-					],
-					"path": [
-						"sales_order_item"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "",
-							"disabled": true
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"sales_order_id\": 5500966,\n    \"product_id\": 7463052,\n    \"item_number\": 1,\n    \"item_name\": \"API Cake\",\n    \"price_sell\": 100,\n    \"price_cost\": 50,\n    \"qtd\": 1,\n    \"canceled\": false\n}"
+						},
+						"url": {
+							"raw": "{{url_api}}/sales_order_item/all",
+							"host": [
+								"{{url_api}}"
+							],
+							"path": [
+								"sales_order_item",
+								"all"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
 						}
-					]
+					},
+					"response": []
+				},
+				{
+					"name": "Itens do Pedidos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"sales_order_id\": 5500966,\n    \"product_id\": 7463052,\n    \"item_number\": 1,\n    \"item_name\": \"API Cake\",\n    \"price_sell\": 100,\n    \"price_cost\": 50,\n    \"qtd\": 1,\n    \"canceled\": false\n}"
+						},
+						"url": {
+							"raw": "{{url_api}}/sales_order_item",
+							"host": [
+								"{{url_api}}"
+							],
+							"path": [
+								"sales_order_item"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Grupo de Parcelas do Pedido",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "{{token}}",
-						"type": "text"
+			"name": "Serviços Adicionais",
+			"item": [
+				{
+					"name": "Endereço de Entrega do Pedido",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
 					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "{{url_api}}/sales_order_parcel_group/all",
-					"host": [
-						"{{url_api}}"
-					],
-					"path": [
-						"sales_order_parcel_group",
-						"all"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "",
-							"disabled": true
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url_api}}/sales_orders_shipping_address/all",
+							"host": [
+								"{{url_api}}"
+							],
+							"path": [
+								"sales_orders_shipping_address",
+								"all"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Grupo de Parcelas do Pedido",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "{{token}}",
-						"type": "text"
 					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"sales_order_id\": 5500966,\n    \"price\": 100,\n    \"payment_form\": 56215,\n    \"total_discount\": 0,\n    \"total_addition\": 0\n}"
+					"response": []
 				},
-				"url": {
-					"raw": "{{url_api}}/sales_order_parcel_group",
-					"host": [
-						"{{url_api}}"
-					],
-					"path": [
-						"sales_order_parcel_group"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "",
-							"disabled": true
+				{
+					"name": "Endereço de Entrega do Pedido",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url_api}}/sales_orders_shipping_address/all",
+							"host": [
+								"{{url_api}}"
+							],
+							"path": [
+								"sales_orders_shipping_address",
+								"all"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Parcelas do Pedido",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "{{token}}",
-						"type": "text"
 					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": ""
+					"response": []
 				},
-				"url": {
-					"raw": "{{url_api}}/sales_order_parcel/all",
-					"host": [
-						"{{url_api}}"
-					],
-					"path": [
-						"sales_order_parcel",
-						"all"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Parcelas do Pedido",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "{{token}}",
-						"type": "text"
+				{
+					"name": "Intermediador",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
 					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"sales_order_id\": 5500966,\n    \"parcel\": 1,\n    \"expiration\": \"2021-07-31\",\n    \"price\": 100,\n    \"payment_form\": 56215,\n    \"sales_parcel_group\": 3275704\n}"
-				},
-				"url": {
-					"raw": "{{url_api}}/sales_order_parcel",
-					"host": [
-						"{{url_api}}"
-					],
-					"path": [
-						"sales_order_parcel"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "",
-							"disabled": true
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url_api}}/intermediary/all",
+							"host": [
+								"{{url_api}}"
+							],
+							"path": [
+								"intermediary",
+								"all"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Intermediador",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "{{token}}",
-						"type": "text"
 					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": ""
+					"response": []
 				},
-				"url": {
-					"raw": "{{url_api}}/intermediary/all",
-					"host": [
-						"{{url_api}}"
-					],
-					"path": [
-						"intermediary",
-						"all"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "",
-							"disabled": true
+				{
+					"name": "Intermediador",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-cake-token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fiscal_operations_intermediary_id\": 3,\n    \"name\": \"Antonella e Yago Alimentos ME\",\n    \"code\": \"AYAM\",\n    \"active\": true,\n    \"doc_cnpj\": \"06684433000190\"\n}\n"
+						},
+						"url": {
+							"raw": "{{url_api}}/intermediary",
+							"host": [
+								"{{url_api}}"
+							],
+							"path": [
+								"intermediary"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Intermediador",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "X-cake-token",
-						"value": "{{token}}",
-						"type": "text"
 					},
-					{
-						"key": "content-type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"fiscal_operations_intermediary_id\": 3,\n    \"name\": \"Antonella e Yago Alimentos ME\",\n    \"code\": \"AYAM\",\n    \"active\": true,\n    \"doc_cnpj\": \"06684433000190\"\n}\n"
-				},
-				"url": {
-					"raw": "{{url_api}}/intermediary",
-					"host": [
-						"{{url_api}}"
-					],
-					"path": [
-						"intermediary"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "",
-							"disabled": true
-						}
-					]
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	],
 	"event": [
