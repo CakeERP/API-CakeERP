@@ -1,0 +1,149 @@
+{
+	"info": {
+		"name": "CakeERP - API - SalesOrder All",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Criar Pedido Completo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"order_type\": 1,\n    \"order_number\": 764,\n    \"fiscal_operation\": 17598,\n    \"price_list\": null,\n    \"date_order\": \"2022-06-06\",\n    \"date_sell\": \"2022-06-06\",\n    \"date_billed\": \"2022-06-06\",\n    \"contact_name\": \"Fernando\",\n    \"customer\": 7191480,\n    \"payment_form\": null,\n    \"seller\": 12119,\n    \"customer_cpf_cnpj\": null,\n    \"supplier\": 103312,\n    \"supplier_label\": \"A & L TEXTIL LTDA\",\n    \"addition_type\": null,\n    \"addition_percent\": null,\n    \"addition_canceled\": 0.0,\n    \"shipping\": 0.0,\n    \"shipping_brand\": null,\n    \"shipping_transporter\": null,\n    \"shipping_quantity\": 1,\n    \"shipping_net_weight\": 15,\n    \"shipping_gross_weight\": 20,\n    \"shipping_species\": null,\n    \"shipping_price\": 0.0,\n    \"shipping_numeration\": null,\n    \"discount_percent\": null,\n    \"discount_amount\": 0.0,\n    \"indPag\": 0,\n    \"ecf_printer\": null,\n    \"ecf_number\": null,\n    \"ccf_number\": null,\n    \"invoice_model\": null,\n    \"note_series\": null,\n    \"emission_date\": null,\n    \"nfe\": null,\n    \"nfe_id\": null,\n    \"nfe_date\": null,\n    \"nfe_danfe\": null,\n    \"nfe_key_dv\": null,\n    \"nfe_key\": null,\n    \"nfe_key_code\": null,\n    \"nfe_nprot\": null,\n    \"nfe_status_msg\": null,\n    \"nfe_nrec\": null,\n    \"nfe_xmotivo\": null,\n    \"nfe_verified\": null,\n    \"nfe_status\": 0,\n    \"return_code\": null,\n    \"note_number\": null,\n    \"environment_order\": 0,\n    \"resume\": null,\n    \"delivery_time\": \"2022-06-10\",\n    \"sales_order_ref\": null,\n    \"sales_return_id\": null,\n    \"delivered_order\": 1,\n    \"validity\": null,\n    \"canceled\": 0,\n    \"inutilized\": 0,\n    \"addition_discount_order\": null,\n    \"subtotal\": 240.79,\n    \"discount_type\": null,\n    \"addition_amount\": 0.0,\n    \"other_expenses\": 0.0,\n    \"total\": 240.79,\n    \"change_total\": 0.0,\n    \"pdv_end_dth\": null,\n    \"pdv_ini_dth\": null,\n    \"internal_obs\": \"Observação Interna\",\n    \"obs\": \"Observação\",\n    \"ecommerce_id\": null,\n    \"external_sale_number\": null,\n    \"sales_parcel_groups\": [\n        {\n            \"price\": 240.79,\n            \"payment_form\": 43117,\n            \"total_discount\": 0.0,\n            \"total_addition\": 0.0\n        }\n    ],\n    \"sales_parcels\": [\n        {\n            \"parcel\": 1,\n            \"payment_form\": 43117,\n            \"price\": 120.35,\n            \"expiration\": \"2022-06-06\",\n            \"sales_parcel_group\": null\n        },\n        {\n            \"parcel\": 2,\n            \"payment_form\": 43117,\n            \"price\": 120.35,\n            \"expiration\": \"2022-07-06\",\n            \"sales_parcel_group\": null\n        }\n    ],\n    \"sales_items\": [\n        {\n            \"item_name\": \"ÁGATA AZUL CORAÇÃO 706 G\",\n            \"item_number\": 1,\n            \"item_add_info\": \"\",\n            \"canceled\": 0,\n            \"qtd\": 1,\n            \"qtd_canceled\": 0,\n            \"price_cost\": 0.0,\n            \"grid\": null,\n            \"line_feature\": null,\n            \"column_feature\": null,\n            \"service_id\": null,\n            \"seller_id\": 12119,\n            \"product_id\": 7176917,\n            \"price_sell\": 240.79,\n            \"item_type\": \"product\",\n            \"round_type\": \"A\",\n            \"total\": \"240.79\",\n            \"canceled_amount\": 0,\n            \"shipping_coupon_prorated\": 0,\n            \"expense_coupon_prorated\": 0,\n            \"addition_coupon_prorated\": 0,\n            \"addition_percent\": null,\n            \"addition_amount\": 0,\n            \"discount_type\": null,\n            \"discount_percent\": null,\n            \"discount_coupon_prorated\": 0,\n            \"discount_amount\": 0,\n            \"price_taxable\": 240.79,\n            \"addition_type\": null,\n            \"item_tax\": [\n                                {\n                    \"fiscal_operation_id\": 17598,\n                    \"cfop\": 287,\n                    \"cst\": 102,\n                    \"icms_rate\": null,\n                    \"icms_free\": 0,\n                    \"icms_basis\": 0,\n                    \"icms_amount\": 0,\n                    \"icms_canceled\": 0,\n                    \"icms_addition\": 0,\n                    \"icms_discount\": 0,\n                    \"icms_rate_interstate\": 0,\n                    \"icms_amount_part_orig\": 0,\n                    \"icms_credit_amount\": 0,\n                    \"icms_part_orig\": 0,\n                    \"code_deson_icms\": 0,\n                    \"icms_st\": 0,\n                    \"icms_basis_st\": 0,\n                    \"icms_totalizer\": null,\n                    \"icms_credit_rate\": 0,\n                    \"icms_not_incident\": 0,\n                    \"icms_part_dest\": 0,\n                    \"icms_basis_uf_dest\": 0,\n                    \"icms_rate_uf_dest\": 0,\n                    \"icms_amount_part_dest\": 0,\n                    \"icms_rate_fcp_uf_dest\": 0,\n                    \"icms_amount_fcp_uf_dest\": 0,\n                    \"iof_rate\": null,\n                    \"iof_amount\": null,\n                    \"code_cest\": null,\n                    \"other_taxes\": 0,\n                    \"cofins_rate\": 3,\n                    \"cofins_cst\": \"08\",\n                    \"cofins_amount\": 7.22,\n                    \"ibpt_amount\": 70.14,\n                    \"ibpt_aliquot\": 29.13,\n                    \"pis_amount\": 4.82,\n                    \"pis_rate\": 2.00,\n                    \"pis_cst\": \"08\",\n                    \"mva_rate_st\": null,\n                    \"issqn_basis\": 0,\n                    \"chargeability_iss\": 1,\n                    \"issqn_canceled\": 0,\n                    \"issqn_rate\": null,\n                    \"issqn_st\": 0,\n                    \"issqn_free\": 0,\n                    \"issqn_amount\": 0,\n                    \"issqn_discount\": 0,\n                    \"issqn_totalizer\": null,\n                    \"issqn_addition\": 0,\n                    \"issqn_not_incident\": 0,\n                    \"ipi_cst\": 53,\n                    \"ipi_amount\": 0,\n                    \"ipi_rate\": 0,\n                    \"code_enq_ipi\": 999,\n                    \"nfe_info\": \"Total da carga tributária = 5,45%\",\n                    \"ii_rate\": null,\n                    \"ii_amount\": null,\n                    \"csll_rate\": null,\n                    \"csll_amount\": 0,\n                    \"irrf_rate\": null,\n                    \"irrf_amount\": 0,\n                    \"inss_rate\": null,\n                    \"inss_amount\": 0\n                }\n            ]\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_api}}/nfe",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"nfe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Faturar Pedido",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sales_order_id\": 6190989\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_api}}/bill_order",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"bill_order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancelar Venda",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-cake-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sales_order_id\": 6190989\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_api}}/cancel_order",
+					"host": [
+						"{{url_api}}"
+					],
+					"path": [
+						"cancel_order"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "TOKEN"
+		},
+		{
+			"key": "url_api",
+			"value": "https://app.cakeerp.com/api"
+		}
+	]
+}
