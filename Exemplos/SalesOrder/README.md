@@ -61,4 +61,7 @@
       </ul>
     </li> 
  </details>
+  
+   - <a href="https://www.postman.com/cakeerp/workspace/cakeerp/collection/11308477-117fc600-5393-41de-ac66-90c679917e11" target="_blank">Link Postman Web</a>
+  - <a href="https://github.com/CakeERP/API-CakeERP/blob/main/Exemplos/SalesOrder/CakeERP%20-%20API%20-%20SalesOrderAll.postman_collection.json">Link Download Postman Collection</a>
  
