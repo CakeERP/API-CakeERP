@@ -55,7 +55,7 @@
       <ul>
         <li>POST - Criar Pedido Completo</li>
         <li>POST - Faturar Pedido</li>
-        <li>POST - Cancelar Venda</li>
+        <li>POST - Cancelar Pedido</li>
       </ul>
     </li> 
  </details>
