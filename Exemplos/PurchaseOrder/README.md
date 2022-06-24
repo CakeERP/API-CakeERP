@@ -8,6 +8,9 @@
       <li>Parcelas da Ordem de Compra | URL: <b>/api/purchase_order_parcel</b></li>
       <li>Tributações dos Itens da Ordem de Compra | URL: <b>/api/purchase_order_item_tax</b></li>
       <li>Recebimento Ordem de Compra | URL: <b>/api/purchase_order_receives</b></li>
+      <li>Itens de Recebimento Ordem de Compra | URL: <b>/api/purchase_order_receive_item</b></li>
+      <li>Tributações dos Itens de Recebimento Ordem de Compra | URL: <b>/api/purchase_order_receive_item_tax</b></li>
+      <li>Tributações dos Itens de Recebimento Ordem de Compra Copy | URL: <b>/api/purchase_order_receives_cte</b></li>
  </details>
 
 <details>
