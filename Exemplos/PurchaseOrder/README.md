@@ -6,7 +6,7 @@
       <li>Ordens de Compra | <b>URL: /api/purchase_order</b></li>
       <li>Itens da Ordem de Compra | URL: <b>/api/purchase_order_item</b></li>
       <li>Parcelas da Ordem de Compra | URL: <b>/api/purchase_order_parcel</b></li>
-      <li>Tributações dos itens da ordem de compra | URL: <b>/api/purchase_order_item_tax</b></li>
+      <li>Tributações dos Itens da Ordem de Compra | URL: <b>/api/purchase_order_item_tax</b></li>
       <li>Recebimento Ordem de Compra | URL: <b>/api/purchase_order_receives</b></li>
  </details>
 
