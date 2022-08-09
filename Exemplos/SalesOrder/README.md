@@ -4,17 +4,12 @@
   <summary>Lista de Serviços Relacionados</summary>
   <ol>
     <li>
-        <a href="#">Serviços Dependentes</a>
+        <a href="#">Pedidos</a>
       <ul>
-        <li>GET - Clientes</li>
+         <li>GET - Clientes</li>
         <li>POST - Clientes</li>
         <li>GET - Vendedores</li>
         <li>POST - Vendedores</li>
-      </ul>
-    </li>
-    <li>
-        <a href="#">Pedidos</a>
-      <ul>
         <li>GET - Pedidos</li>
         <li>POST - Pedidos</li>
       </ul>
@@ -49,3 +44,22 @@
  
   - <a href="https://www.postman.com/cakeerp/workspace/cakeerp/documentation/3375748-6161bc06-58ac-4e4a-aa34-99237a192841" target="_blank">Link Postman Web</a>
   - <a href="https://github.com/CakeERP/API-CakeERP/blob/main/Exemplos/SalesOrder/CakeERP%20-%20API%20-%20SalesOrder.postman_collection.json">Link Download Postman Collection</a>
+
+# SalesOrder [Pedido Completo]
+
+<details>
+  <summary>Lista de Serviços Relacionados</summary>
+  <ol>
+    <li>
+        <a href="#">Pedidos</a>
+      <ul>
+        <li>POST - Criar Pedido Completo</li>
+        <li>POST - Faturar Pedido</li>
+        <li>POST - Cancelar Pedido</li>
+      </ul>
+    </li> 
+ </details>
+  
+   - <a href="https://www.postman.com/cakeerp/workspace/cakeerp/collection/11308477-117fc600-5393-41de-ac66-90c679917e11" target="_blank">Link Postman Web</a>
+  - <a href="https://github.com/CakeERP/API-CakeERP/blob/main/Exemplos/SalesOrder/CakeERP%20-%20API%20-%20SalesOrderAll.postman_collection.json">Link Download Postman Collection</a>
+ 

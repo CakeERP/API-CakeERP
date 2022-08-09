@@ -1,7 +1,20 @@
 # PurchaseOrder [Ordens de Compra]
 
 <details>
-  <summary>Lista de Serviços Relacionados</summary>
+  <summary>Lista de Serviços</summary><p>
+  <ol>
+      <li>Ordens de Compra | <b>URL: /api/purchase_order</b></li>
+      <li>Itens da Ordem de Compra | URL: <b>/api/purchase_order_item</b></li>
+      <li>Parcelas da Ordem de Compra | URL: <b>/api/purchase_order_parcel</b></li>
+      <li>Tributações dos Itens da Ordem de Compra | URL: <b>/api/purchase_order_item_tax</b></li>
+      <li>Recebimento Ordem de Compra | URL: <b>/api/purchase_order_receives</b></li>
+      <li>Itens de Recebimento Ordem de Compra | URL: <b>/api/purchase_order_receive_item</b></li>
+      <li>Tributações dos Itens de Recebimento Ordem de Compra | URL: <b>/api/purchase_order_receive_item_tax</b></li>
+      <li>Recebimento Ordem de Compra CTE | URL: <b>/api/purchase_order_receives_cte</b></li>
+ </details>
+
+<details>
+  <summary>Lista de Serviços Relacionados</summary><p>
   <ol>
     <li>
         <a href="#">Orderm de Compra</a>
